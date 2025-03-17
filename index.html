@@ -76,6 +76,22 @@
 </div>
 <!-- partial -->
   <script  src="./mobile.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const bgMusic = document.getElementById("bgMusic");
+
+      function playMusic() {
+          if (bgMusic.paused) {
+              bgMusic.play();
+              bgMusic.volume = 0.2;
+          }
+      }
+
+    // For mobile and desktop compatibility
+      document.addEventListener("click", playMusic);
+      document.addEventListener("touchstart", playMusic);
+    });
+  </script>
   <script  src="./script.js"></script>
   <script>
     window.addEventListener('click', function () {
