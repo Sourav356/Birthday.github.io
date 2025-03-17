@@ -10,7 +10,7 @@ body {
   justify-content: center;
 
   background-size: cover;
-  background-image: url("/bday.gif");
+  background-image: url("bday.gif");
   background-position: center center;
   background-repeat: no-repeat;
 }
